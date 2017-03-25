@@ -1,16 +1,15 @@
-# amazonDrive
-For Prime Users, amazon allow them to store unlimited photos
+# file2pic
+There are many companies provide unlimited photo storage service.
 
-Here this is code used for convert any file to pictures and convert back!
+Google photos, Amazon Photos.
 
-So if you are a Prime Member, you can store any file to amazon drive with unlimited stroage
+This is a python project used to convert any file to a picture, upload it to Google photos, download back and convert back to the file
 
 # Usage
 
-- put the files you want to upload to "upload folder"
-- run upload.py
+- open gen_pic.py, drag your dir to the program
 - the converted file will be in output folder
-- run split.py
-- the file will be recovered to normal files in split folder
+- run read_pic.py
+- the file will be recovered to normal files in another folder
 
 Enjoy guys!
