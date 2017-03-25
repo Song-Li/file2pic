@@ -9,7 +9,6 @@ bi_len = len(bi)
 
 # convert to hex str
 hex_len = "%0*x" % (8, bi_len)
-print hex_len
 
 # convert hex to str
 str_len = ""
@@ -26,13 +25,5 @@ for i in range(2048):
 
 bi = bi + end_str
 
-i = 0
-for b in bi:
-    i += 1
-    if i > 20:
-        break
-    print b.encode('hex_codec')
-
 img = Image.frombytes('L', (2048, bi_len / 2048 + 1), bi)
 img.save('result.png')
-
