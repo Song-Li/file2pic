@@ -40,7 +40,12 @@ files = os.listdir(ori_file_dir)
 file_names = []
 for f in files:
     file_names.append(f)
+
+num_files = len(file_names)
+num_finished = 0
 for f in file_names:
+    num_finished += 1
     gen_pic(ori_file_dir + '/' + f, save_file_dir + '/' + f + '.png')
+    print str(num_finished) + " out of " + str(num_files) + " finished." 
 
 
