@@ -5,7 +5,7 @@ def split(path, file_name, output_path):
     os.mkdir (output_path + '/' + file_name)
 
     # split the file to small pieces
-    command = 'split --bytes=10M ' + path + '/' + file_name + ' ' + output_path + '/' + file_name + '/'
+    command = 'split -a 3 --bytes=10M ' + path + '/' + file_name + ' ' + output_path + '/' + file_name + '/'
     os.system (command)
 
 def join(path, file_name):
